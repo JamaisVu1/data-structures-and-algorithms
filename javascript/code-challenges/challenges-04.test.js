@@ -55,9 +55,19 @@ Using spread and destructuring assignments, create a new object called newSate, 
 Prove that the original people, stuff, and state are unchanged.
 
 ------------------------------------------------------------------------------------------------ */
-
+// worked with anthony and gpt
 const setState = (arr) => {
-  // Solution code here...
+
+    let newState = {
+    people: [...people],
+    stuff: {...stuff },
+
+  };
+
+    return newState;
+
+
+
 };
 
 
@@ -75,9 +85,19 @@ In the newState function, use only spread and destructuring assignments to:
 Ensure that the original people array and stuff objects are unchanged
 
 ------------------------------------------------------------------------------------------------ */
+// worked with anthony and gpt
 
 const newState = (arr) => {
-  // Solution code here...
+    let newerState = {
+    people: [...people],
+    stuff: {
+      ...stuff,
+      cars: [...stuff.cars, 'Ford'],
+      toothbrush: 'brand new',
+      toys: stuff.toys + 1
+   }
+  };
+    return newerState;
 };
 
 
