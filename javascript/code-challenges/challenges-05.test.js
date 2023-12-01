@@ -59,9 +59,11 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ]
 
 ------------------------------------------------------------------------------------------------ */
-
+// worked with anthony
 const updateNumbers = (obj) => {
-  // Solution code here...
+  const entriesArray = Object.entries(obj);
+  const resultArray = entriesArray.map(([name, phoneNumber]) => `${name}: ${phoneNumber}`);
+  return resultArray;
 };
 
 
