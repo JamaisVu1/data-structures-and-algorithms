@@ -138,10 +138,10 @@ For example:
 hasChildrenValues(characters, 'Cersei') will return true
 hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
-
+// worked with anthony and gpt
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-
+  const foundCharacter = arr.find((char) => char.name === character);
+  return foundCharacter && 'children' in foundCharacter && Object.values(foundCharacter.children).length > 0;
 };
 
 /* ------------------------------------------------------------------------------------------------
