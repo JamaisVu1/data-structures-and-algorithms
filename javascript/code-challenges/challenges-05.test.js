@@ -37,7 +37,8 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-  // Solution code here...
+  const array = Object.values(obj);
+  return array.includes(value);
 };
 
 /* ------------------------------------------------------------------------------------------------
