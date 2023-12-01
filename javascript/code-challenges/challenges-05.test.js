@@ -35,7 +35,7 @@ Write a function named checkValues that takes in an object and a value and retur
 
 
 ------------------------------------------------------------------------------------------------ */
-
+// worked with anthony
 const checkValues = (obj, value) => {
   const array = Object.values(obj);
   return array.includes(value);
@@ -116,10 +116,14 @@ const characters = [
     house: 'Snow',
   },
 ];
-
+// worked with anthony and gpt
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  arr.forEach(character => {
+    if (character.house && !houses.includes(character.house)) {
+      houses.push(character.house);
+    }
+  });
   return houses;
 };
 
