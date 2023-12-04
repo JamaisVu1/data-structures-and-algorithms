@@ -51,7 +51,7 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+ return arr.reduce((count)=> count + 1, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,7 +111,10 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  return arr.reduce((names, characters)=> {
+    names.push(characters.name);
+    return names;
+  } , []);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -121,9 +124,9 @@ Write a function named reversedString that takes in a string and returns a strin
 
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
-
+//gpt helped
 const reversedString = (str) => {
-  // Solution code here...
+  return str.split('').reduce((reversed, char) => char + reversed, '');
 };
 
 /* ------------------------------------------------------------------------------------------------
