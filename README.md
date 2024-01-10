@@ -26,4 +26,6 @@ To run your tests
 
 [Array Insert Shift](python/docs/array_insert_shift/README.md)
 
+[Array Binary Search](python/docs/array_binary_search/README.md)
+
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
