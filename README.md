@@ -28,4 +28,6 @@ To run your tests
 
 [Array Binary Search](python/docs/array_binary_search/README.md)
 
+[Matrix](python/docs/matrix/README.md)
+
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
