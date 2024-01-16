@@ -30,4 +30,6 @@ To run your tests
 
 [Matrix](python/docs/matrix/README.md)
 
+[Linked List](python\docs\linked-list-implementation\README.md)
+
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
