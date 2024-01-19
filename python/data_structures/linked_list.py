@@ -1,15 +1,11 @@
 # GPT assisted
 
 class Node:
-    def __init__(self,value):
+    def __init__(self, value):
         self.value = value
         self.next = None
 
 class LinkedList:
-    """
-    A LinkedList class 
-    """
-
     def __init__(self):
         self.head = None
 
@@ -17,30 +13,55 @@ class LinkedList:
         new_node = Node(value)
         new_node.next = self.head
         self.head = new_node
-        
-    def kth_from_end(self, k):
-        if k < 0:
-            raise TargetError("k must be a non-negative integer")
 
-        pointer1 = self.head
-        pointer2 = self.head
+    def includes(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return True
+            current = current.next
+        return False
 
-        for _ in range(k):
-            if pointer2 is None:
-                raise TargetError("k is larger than the length of the list")
-            pointer2 = pointer2.next
+    def to_string(self):
+        current = self.head
+        values = []
+        while current:
+            values.append(f"{{ {current.value} }}")
+            current = current.next
+        values.append("NULL")
+        return " -> ".join(values)
+    
+    def append(self, value):
+        new_node = Node(value)
+        if not self.head:
+            self.head = new_node
+            return
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = new_node
 
-        
-        if pointer2 is None:
-            raise TargetError("k is larger than the length of the list")
+    def insert_before(self, target, value):
+        new_node = Node(value)
+        if not self.head:
+            return
+        if self.head.value == target:
+            new_node.next = self.head
+            self.head = new_node
+            return
+        current = self.head
+        while current.next and current.next.value != target:
+            current = current.next
+        if current.next:
+            new_node.next = current.next
+            current.next = new_node
 
-        while pointer2.next:
-            pointer1 = pointer1.next
-            pointer2 = pointer2.next
-
-        return pointer1.value
-        
-
-
-class TargetError(Exception):
-    pass
+    def insert_after(self, target, value):
+        new_node = Node(value)
+        current = self.head
+        while current and current.value != target:
+            current = current.next
+        if current:
+            new_node.next = current.next
+            current.next = new_node
+            
