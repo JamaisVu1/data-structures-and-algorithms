@@ -1,5 +1,5 @@
 import pytest
-from data_structures.linked_list import LinkedList, TargetError
+from data_structures.linked_list import LinkedList
 
 
 @pytest.mark.skip("TODO")
