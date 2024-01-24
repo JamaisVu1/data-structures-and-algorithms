@@ -34,4 +34,6 @@ To run your tests
 
 [Linked List Zip](python/docs/linked_list_zip/README.md)
 
+[Stack Queue Brackets](python\docs\stack_queue_brackets\README.md)
+
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
