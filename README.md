@@ -36,4 +36,6 @@ To run your tests
 
 [Stack Queue Brackets](python\docs\stack_queue_brackets\README.md)
 
+[Trees](python\docs\trees\README.md)
+
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
