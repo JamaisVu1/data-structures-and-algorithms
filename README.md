@@ -38,4 +38,6 @@ To run your tests
 
 [Trees](python\docs\trees\README.md)
 
+[Tree Fizz Buzz](python\docs\tree_fizz_buzz\README.md)
+
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
