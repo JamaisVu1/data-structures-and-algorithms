@@ -64,4 +64,11 @@ class LinkedList:
         if current:
             new_node.next = current.next
             current.next = new_node
-            
+    
+    def find(self, key):
+        current = self.head
+        while current:
+            if current.value[0] == key:
+                return current.value  
+            current = current.next  
+        return None    
